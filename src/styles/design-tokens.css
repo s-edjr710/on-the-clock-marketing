@@ -1,0 +1,68 @@
+/*
+ * On The Clock — Marketing Site Design Tokens
+ *
+ * All visual values on the marketing site derive from these tokens.
+ * No arbitrary color, spacing, border-radius, or transition value
+ * appears in any component — only these named tokens.
+ *
+ * Light theme, per Change Log Entry 221 (marketing site is light;
+ * the app itself is dark). Six named colors, matching the app's own
+ * maximum-color discipline from Phase 3 Step 3.2.
+ *
+ * Spacing: 8-point grid (4/8/16/24/32/48/64px) — only these values
+ *   are used for padding, margin, and gap.
+ * Border radius: two values only (sm=4px, md=8px).
+ * Transitions: one standard duration (150ms).
+ *
+ * These CSS custom properties are available in any CSS context.
+ * Tailwind utility classes are registered in globals.css via @theme.
+ */
+
+:root {
+  /* === Colors (6 named values, per Entry 221) === */
+  --color-bg: #F7F5F0;       /* Warm off-white. Page background. */
+  --color-text: #0A2540;     /* Deep navy. Headlines and primary body text. */
+  --color-accent: #06B6D4;   /* Vivid cyan. Primary interactive / highlight color.
+                                 Shared with the app's accent (Phase 3 Step 3.2). */
+  --color-accent-2: #1F6F54; /* Forest green. Secondary accent. */
+  --color-white: #FFFFFF;    /* Pure white. Cards, nav/footer surfaces. */
+  --color-muted: #5B6B7A;    /* Muted slate-gray. Secondary text, captions. */
+
+  /* === Typography === */
+  /* Font families are set in layout.tsx via Next.js font variables:
+     Inter for body, Inter ExtraBold (800) for headlines — matching
+     Entry 214's wordmark treatment. */
+  --font-size-xs:   0.75rem;    /* 12px */
+  --font-size-sm:   0.875rem;   /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg:   1.125rem;   /* 18px */
+  --font-size-xl:   1.25rem;    /* 20px */
+  --font-size-2xl:  1.5rem;     /* 24px */
+  --font-size-3xl:  1.875rem;   /* 30px */
+  --font-size-4xl:  2.25rem;    /* 36px */
+  --font-size-5xl:  3rem;       /* 48px */
+
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-bold:     700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight:  1.25;
+  --line-height-normal: 1.5;
+
+  /* === Spacing — 8-point grid === */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* === Border Radius — two values only === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* === Transitions === */
+  --transition-standard: 150ms ease;
+}

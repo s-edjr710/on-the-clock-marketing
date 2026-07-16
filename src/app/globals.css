@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "../styles/design-tokens.css";
+
+/*
+ * Register design tokens as Tailwind utilities.
+ * --color-* entries generate bg-*, text-*, border-*, ring-* utilities.
+ * --radius-* entries generate rounded-* utilities.
+ * --font-* entries register the Inter font variable from layout.tsx.
+ */
+@theme inline {
+  --color-bg:       var(--color-bg);
+  --color-text:     var(--color-text);
+  --color-accent:   var(--color-accent);
+  --color-accent-2: var(--color-accent-2);
+  --color-white:    var(--color-white);
+  --color-muted:    var(--color-muted);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+
+  --font-sans: var(--font-inter);
+}
+
+/* === Base HTML styles === */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  line-height: var(--line-height-normal);
+}
