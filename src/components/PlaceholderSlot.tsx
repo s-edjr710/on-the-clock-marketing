@@ -14,7 +14,7 @@ export default function PlaceholderSlot({
 }) {
   return (
     <div
-      className={`flex min-h-[220px] items-center justify-center rounded-md border border-dashed border-muted/40 bg-white px-6 py-8 text-center text-sm font-medium text-muted ${className}`}
+      className={`flex min-h-[140px] items-center justify-center rounded-md border border-dashed border-muted/40 bg-white px-6 py-6 text-center text-sm font-medium text-muted ${className}`}
     >
       {label}
     </div>

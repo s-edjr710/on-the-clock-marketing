@@ -9,8 +9,8 @@ import PlaceholderSlot from "@/components/PlaceholderSlot";
 
 export default function Section3GradesProjections() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
-      <div className="grid gap-12 md:grid-cols-2 md:items-center">
+    <section className="mx-auto max-w-6xl px-6 py-14">
+      <div className="grid gap-8 md:grid-cols-2 md:items-center">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text sm:text-4xl">
             Find out who actually won the draft

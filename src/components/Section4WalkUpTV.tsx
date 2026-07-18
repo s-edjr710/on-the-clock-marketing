@@ -8,7 +8,7 @@ import PlaceholderSlot from "@/components/PlaceholderSlot";
 
 export default function Section4WalkUpTV() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="mx-auto max-w-6xl px-6 py-14">
       <div className="flex flex-col gap-6">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text sm:text-4xl">
           Make an entrance
@@ -26,7 +26,7 @@ export default function Section4WalkUpTV() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-6 grid gap-4 md:grid-cols-2">
         <PlaceholderSlot label="Clip placeholder — pick submitted, announcement sound, next manager's walk-up song starting with AI-generated title and waveform. Muted by default, visible unmute control." />
         <PlaceholderSlot label="Image placeholder — TV Display composited into approved living-room scene" />
       </div>

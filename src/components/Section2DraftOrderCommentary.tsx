@@ -10,7 +10,7 @@ import PlaceholderSlot from "@/components/PlaceholderSlot";
 
 export default function Section2DraftOrderCommentary() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="mx-auto max-w-6xl px-6 py-14">
       <div className="flex flex-col gap-6">
         <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-text sm:text-4xl">
           The two moments your league will talk about all year
@@ -31,7 +31,7 @@ export default function Section2DraftOrderCommentary() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-6 grid gap-4 md:grid-cols-2">
         <PlaceholderSlot label="Commentary example: placeholder pending sprint — current output flagged as too flat, being reworked pre-launch. Screenshot slot: Clock Zone + Commentary Strip in one frame." />
         <PlaceholderSlot label="Clip placeholder — full “reveal all” sequence, positions spinning and locking" />
       </div>
