@@ -23,7 +23,7 @@ export default function Hero() {
         </span>
       </div>
 
-      <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-28 sm:py-36">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 pt-28 pb-16 sm:pt-36 sm:pb-20">
         <h1 className="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
           Draft night, without the day job.
         </h1>
