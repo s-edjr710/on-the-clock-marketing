@@ -9,7 +9,7 @@ import PlaceholderSlot from "@/components/PlaceholderSlot";
 
 export default function Section1CommissionerControl() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-14">
+    <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-14">
       <div className="grid gap-8 md:grid-cols-2 md:items-center">
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text sm:text-4xl">
@@ -37,7 +37,7 @@ export default function Section1CommissionerControl() {
             label="Screenshot placeholder — Commissioner Panel overlay sliding in over the manager's live portal"
             className="min-h-[220px]"
           />
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <PlaceholderSlot label="Screenshot placeholder — League creation" />
             <PlaceholderSlot label="Screenshot placeholder — Results export" />
           </div>

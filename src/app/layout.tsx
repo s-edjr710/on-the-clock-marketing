@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import MobileStickyCta from "@/components/MobileStickyCta";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,10 +40,11 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-text">
+      <body className="min-h-full flex flex-col bg-bg text-text pb-16 md:pb-0">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileStickyCta />
         <Analytics />
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>

@@ -36,7 +36,7 @@ export default function Footer() {
             Privacy
           </Link>
           <span aria-hidden="true">·</span>
-          <span>All sales final</span>
+          <span className="italic text-muted/70">All sales final</span>
         </p>
       </div>
     </footer>
